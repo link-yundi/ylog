@@ -26,9 +26,18 @@ const (
 	logFormat = log_.Ldate | log_.Ltime | log_.Lshortfile // log格式
 )
 
-var l = &logger{
-	Logger: log_.New(os.Stdout, "", logFormat),
-}
+var (
+	l = &logger{
+		Logger: log_.New(os.Stdout, "", logFormat),
+	}
+	MapLevel = map[string]logLevel{
+		"trace": LevelTrace,
+		"debug": LevelDebug,
+		"info":  LevelInfo,
+		"warn":  LevelWarn,
+		"error": LevelError,
+	}
+)
 
 type logger struct {
 	level logLevel
