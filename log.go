@@ -23,7 +23,7 @@ const (
 	LevelInfo
 	LevelWarn
 	LevelError
-	logFormat = log_.Ldate | log_.Ltime | log_.Lshortfile // log格式
+	logFormat = log_.Ldate | log_.Ltime // log格式 | log_.Lshortfile
 )
 
 var (
@@ -42,6 +42,10 @@ var (
 type logger struct {
 	level logLevel
 	*log_.Logger
+}
+
+func SetLogFlags(flag int) {
+	l.SetFlags(flag)
 }
 
 func SetLogLevel(logLevel logLevel) {
