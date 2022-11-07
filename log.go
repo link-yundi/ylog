@@ -110,3 +110,11 @@ func Info(v ...any) {
 func Fatal(v ...any) {
 	l.Logger.Fatal("[FATAL]", v)
 }
+
+func Println(v ...any) {
+	l.Logger.Println(v)
+}
+
+func Printf(format string, v ...any){
+	l.Logger.Printf(format, v)
+}
