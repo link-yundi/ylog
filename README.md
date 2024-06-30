@@ -3,7 +3,7 @@ logger 颜色+代码定位
 
 ### 安装
 ```shell
-pip install ylog
+pip install git+https://github.com/link-yundi/ylog.git
 ```
 
 ### 示例
