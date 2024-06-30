@@ -11,7 +11,7 @@ VERSION = '1.0.0'
 from setuptools import setup, find_packages
 
 setup(
-    name='ylog',
+    name='ylogging',
     version=VERSION,
     author='ZhangYundi',
     author_email='yundi.xxii@outlook.com',
@@ -21,6 +21,6 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/link-yundi/ylog',
     scripts=[],
-    package_data=[],
+    package_data={},
     install_requires=['colorlog'],
 )
