@@ -13,6 +13,9 @@ from setuptools import setup, find_packages
 setup(
     name='ylog',
     version=VERSION,
+    py_modules=['ylog'],
+    install_requires=['colorlog'],
+
     author='ZhangYundi',
     author_email='yundi.xxii@outlook.com',
     packages=find_packages(include=['ylog', 'ylog.*']),
@@ -20,7 +23,7 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/link-yundi/ylog',
+
     scripts=[],
     package_data={},
-    install_requires=['colorlog'],
 )
