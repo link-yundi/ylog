@@ -11,7 +11,7 @@ VERSION = '1.0.0'
 from setuptools import setup, find_packages
 
 setup(
-    name='ylogging',
+    name='ylog',
     version=VERSION,
     author='ZhangYundi',
     author_email='yundi.xxii@outlook.com',
