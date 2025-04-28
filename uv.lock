@@ -34,7 +34,7 @@ wheels = [
 ]
 
 [[package]]
-name = "ylog"
+name = "y-log"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

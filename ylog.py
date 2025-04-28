@@ -7,6 +7,7 @@ Created on 2024/6/30 02:37
 ---------------------------------------------
 """
 import os
+import sys
 import time
 import traceback
 
@@ -24,7 +25,6 @@ logfile = os.path.join(_log_path, f'{_LogTime}.log')
 logger.add(logfile)
 
 add = logger.add
-
 
 def info(*msg):
     logger.opt(depth=1).info(" ".join([str(m) for m in msg]))
@@ -46,7 +46,6 @@ def error(*msg):
 =========================================================================
 """
     logger.opt(depth=1).error(err_msg)
-
 
 def debug(*msg):
     logger.opt(depth=1).debug(" ".join([str(m) for m in msg]))

@@ -1,12 +1,16 @@
 # -*- coding: utf-8 -*-
 """
 ---------------------------------------------
-Created on 2024/6/30 02:37
+Created on 2025/4/28 13:22
 @author: ZhangYundi
 @email: yundi.xxii@outlook.com
 ---------------------------------------------
 """
 
-from .ylog import info, warning, debug, error, add
+import ylog
 
-__all__ = ["info", "warning", "debug", "error", "add"]
+
+if __name__ == '__main__':
+    ylog.debug("debug 测试")
+    ylog.info("info 测试")
+    ylog.error("error 测试")
